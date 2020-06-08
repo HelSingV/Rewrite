@@ -6,4 +6,4 @@
 Gear = type=http-response,pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt,requires-body=1,max-size=-1,script-path= https://raw.githubusercontent.com/HelSingV/Rewrite/master/Quantumult%20X/Gear.js 
 
 [MITM]
-hostname = %APPEND% buy.itunes.apple.com,*/
+hostname = %APPEND% buy.itunes.apple.com
