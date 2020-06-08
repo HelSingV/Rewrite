@@ -3,7 +3,8 @@
 # Gear解锁订阅
 ^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body https://raw.githubusercontent.com/HelSingV/Rewrite/master/Quantumult%20X/Gear.js
 [mitm]
-hostname = buy.itunes.apple.com,*/
+hostname = buy.itunes.apple.com,
+*/
 
 function Env(name) {
   this.name = name
