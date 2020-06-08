@@ -1,83 +1,27 @@
-#x.web Module
-#以AGE动漫为例
-
 display_name=AGE动漫
-#display_name是添加到app后显示的名字，可以自取
-
 type=portrait
-#type是剧照的方向，横向填写landscape，纵向填写portrait
-
 cat=episode
-#cat是类别，普通影视填写episode，敏感内容填写av
-
 page_number=101
-#page_number是页面总数
-
 page1_url= https://www.agefans.tv/catalog/all-all-all-all-all-time-1
-#page1_url是要抓取的首页面网址
-
 page2_url_pre= https://www.agefans.tv/catalog/all-all-all-all-all-time-
-#page2_url_pre是从第二页开始的网页前缀，不包含页数那个数字部分
-
 page2_url_suffix=none
-#page2_url_suffix是从第二页开始的网页后缀，不包含页数那个数字部分，如果没有，则填none
-
 first_container_select=div.baseblock
-#first_container_select是包裹所有剧照的元素选择器，如果填写的选择器结果有多个，则只选择第一个，所以尽量选取唯一的
-
-first_items_select=div.cell blockdiff
-#first_items_select是每部剧集包裹的元素选择器
-
+first_items_select=.cell blockdiff
 title_select=div
-#剧集名字的元素选择器
-
 title_select_attr=none
-#如果名字在html tag的属性里，则填写属性，比如src，href等等，如果在标签里，则填写none
-
 logo_select=img
-#剧集封面的元素选择器
-
 logo_select_attr=src
-#如果封面图片的地址在html tag的属性里，则填写属性，比如src，href等等
-
 first_url_select=a
-#剧集链接的元素选择器
-
 first_url_select_attr=href
-#如果剧集的地址在html tag的属性里，则填写属性，比如src，href等等
-
 logo_pre=https:
-#如果12，13选择出来的地址是相对地址，则补上前缀，如果是完整网址，则填写none
-
 first_url_pre=https://www.agefans.tv
-#如果14，15选择出来的地址是相对地址，则补上前缀，如果是完整网址，则填写none
-
 realurl_regex=var vid="(http[^"]+)
-#播放剧集的真实地址正则表达式,如果是模式A，则已经填写完毕，以下内容全部填写none即可，如果是模式B，请继续填写下方内容
-
 second_flag=yes
-#如果A模式，填写none，如果B模式，填写yes
-
 second_container_select=.blockline1
-#包裹所有播放组的元素选择器
-
 second_items_select=a
-#每组播放地址的选择器
-
 second_title_select=none
-#播放名称元素选择器
-
 second_title_select_attr=none
-#如果名字在html tag的属性里，则填写属性，比如src，href等等，如果在标签里，则填写none
-
 second_url_select=none
-#播放链接元素选择器
-
 second_url_select_attr=href
-#如果链接在html tag的属性里，则填写属性，比如src，href等等，如果在标签里，则填写none
-
 second_url_pre=https://www.agefans.tv
-#如果播放链接地址是相对地址，则补上前缀，如果是完整网址，则填写none
-
 second_url_suffix=none
-#如果播放链接地址有后缀，则补上后缀，如果是完整网址，则填写none
