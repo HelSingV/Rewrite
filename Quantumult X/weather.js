@@ -157,7 +157,7 @@ TG频道:@meetashare
 
 
 const address = "auto_ip";//自动定位填 auto_ip , 精确定位填入 经纬度.
-const k = "acb22ebac7b94794b4a9c0495c8fe182";//和风天气APIkey,可自行前往  https://dev.heweather.com/进行获取(注意key类型选WebApi)
+const k = "&acb22ebac7b94794b4a9c0495c8fe182";//和风天气APIkey,可自行前往  https://dev.heweather.com/进行获取(注意key类型选WebApi)
 
 const wea = "https://free-api.heweather.net/s6/weather/now?"+address+k;
 const forecast = "https://widget-api.heweather.net/s6/plugin/sticker?key=acd0fdcab4b9481a98d0f59145420fac&location="+$persistentStore.read("cid")+"&lang=zh";
